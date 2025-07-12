@@ -31,3 +31,4 @@ AlgoSecure - браузерное расширение, которые блок�
 
 
 
+![photo_2025-07-12_02-20-55](https://github.com/user-attachments/assets/fba4aacb-a87f-4aaa-84b5-bf9f7f1d19fb)
