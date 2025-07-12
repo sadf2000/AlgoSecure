@@ -1,4 +1,4 @@
-const GIST_URL = "https://gist.githubusercontent.com/sadf2000/d826a320a61dc50ebbdcf540bf2a7f44/raw/5433942f4d27db32cc7aa2fe21e18e944bd960e7/rules.json";
+const GIST_URL = "";
 
 async function hardUpdate() {
   try {
