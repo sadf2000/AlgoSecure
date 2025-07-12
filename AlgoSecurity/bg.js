@@ -1,4 +1,4 @@
-const GIST_URL = "";
+const GIST_URL = "https://jsonalgosecure.netlify.app/rules.json";
 
 async function hardUpdate() {
   try {
