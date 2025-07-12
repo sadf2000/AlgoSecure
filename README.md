@@ -9,3 +9,6 @@ AlgoSecure - браузерное расширение, которые блок�
 <a href="https://gist.github.com/sadf2000/1218255c4594a5f8e67b48134e01b895" target="_blank">Все заблокированные опасные ссылки</a> 
 <a href="https://learn.algoritmika.org/student-profile?profileId=70069026" target="_blank">Автор данного проекта</a> 
 
+
+
+https://gist.github.com/sadf2000/d826a320a61dc50ebbdcf540bf2a7f44
