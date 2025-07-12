@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "AlgoSecurity Alpha(Anti-Fishing)",
+  "version": "1.0",
+  "permissions": [
+    "declarativeNetRequest",
+    "alarms"  // Добавлено это разрешение!
+  ],
+  "host_permissions": [
+    "https://gist.githubusercontent.com/sadf2000/*",
+    "*://learn.algoritmika.org/*"
+  ],
+  "background": {
+    "service_worker": "bg.js",
+    "type": "module"  // Важно для ES6-модулей
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icons/icon.png" // Только одна иконка
+  },
+  "icons": {
+    "128": "icons/icon.png" // Для магазина Chrome
+  }
+}
