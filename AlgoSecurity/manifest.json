@@ -7,7 +7,7 @@
     "alarms"  // Добавлено это разрешение!
   ],
   "host_permissions": [
-    "https://gist.githubusercontent.com/sadf2000/*",
+    "*://jsonalgosecure.netlify.app/*",
     "*://learn.algoritmika.org/*"
   ],
   "background": {
