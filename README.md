@@ -53,7 +53,7 @@
 <p align="center">
    <h3>Лого у Мальцева:</h3
    
-   <img src="https://github.com/user-attachments/assets/176430da-2d2b-451c-a759-1094f90cc190" width="350" alt="AlgoSecure Alpha logo" />
+   <img src="https://github.com/user-attachments/assets/176430da-2d2b-451c-a759-1094f90cc190" width="350" />
   
    <h3>Лого у Роберта:</h3>
    
