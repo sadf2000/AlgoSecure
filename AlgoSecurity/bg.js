@@ -5,15 +5,32 @@ async function hardUpdate() {
     console.log("Запуск обновления правил...");
     const res = await fetch(`${GIST_URL}?t=${Date.now()}`);
     if (!res.ok) throw new Error(`HTTP error: ${res.status}`);
-    
+
     const rules = await res.json();
+
+    // Модифицируем правила для перенаправления на blocked.html
+    const modifiedRules = rules.map(rule => {
+      if (rule.action.type === "block") {
+        return {
+          ...rule,
+          action: {
+            type: "redirect",
+            redirect: {
+              url: chrome.runtime.getURL("blocked.html")
+            }
+          }
+        };
+      }
+      return rule;
+    });
+
     const oldRules = await chrome.declarativeNetRequest.getDynamicRules();
-    
+
     await chrome.declarativeNetRequest.updateDynamicRules({
       removeRuleIds: oldRules.map(rule => rule.id),
-      addRules: rules
+      addRules: modifiedRules
     });
-    
+
     console.log(`✓ Правила обновлены (${new Date().toLocaleTimeString()})`);
   } catch (err) {
     console.error("✗ Ошибка:", err);

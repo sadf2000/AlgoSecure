@@ -1,10 +1,10 @@
 {
   "manifest_version": 3,
-  "name": "AlgoSecurity Alpha(Anti-Fishing)",
-  "version": "1.0",
+  "name": "AlgoSecure Beta | Защита для Алгоритмики",
+  "version": "2.0",
   "permissions": [
     "declarativeNetRequest",
-    "alarms"  // Добавлено это разрешение!
+    "alarms" 
   ],
   "host_permissions": [
     "*://jsonalgosecure.netlify.app/*",
@@ -12,13 +12,19 @@
   ],
   "background": {
     "service_worker": "bg.js",
-    "type": "module"  // Важно для ES6-модулей
+    "type": "module"  
   },
   "action": {
     "default_popup": "popup.html",
-    "default_icon": "icons/icon.png" // Только одна иконка
+    "default_icon": "icons/icon.png" 
   },
   "icons": {
-    "128": "icons/icon.png" // Для магазина Chrome
-  }
+    "128": "icons/icon.png" 
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["blocked.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }
