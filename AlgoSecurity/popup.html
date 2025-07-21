@@ -2,48 +2,135 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Algoritmika Blocker</title>
+  <title>algosecure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
     body {
       width: 300px;
-      padding: 15px;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      color: #333;
+      padding: 20px;
+      font-family: 'Handjet', monospace;
+      background: #000;
+      color: #fff;
+      text-transform: lowercase;
+      position: relative;
+      overflow: hidden;
     }
-    h1 {
-      color: #4285f4;
-      font-size: 18px;
-      margin-top: 0;
-    }
-    a {
+    
+    .logo {
+      height: 52px;
+      width: auto;
       display: block;
-      padding: 8px 12px;
-      margin: 5px 0;
-      background: #fff;
+      margin: 0 auto 15px;
+      margin-top: 8px;
+    }
+    
+    h1 {
+      color: #fff;
+      font-size: 26px;
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+    
+    .a {
+      display: block;
+      padding: 12px 16px;
+      margin: 10px 0;
+      background: transparent;
       border-radius: 4px;
       text-decoration: none;
-      color: #1a73e8;
-      border: 1px solid #dadce0;
-      transition: background 0.3s;
-    }
-    a:hover {
-      background: #e8f0fe;
-    }
-    .footer {
-      margin-top: 15px;
-      font-size: 12px;
-      color: #70757a;
+      color: #fff;
+      border: 1px solid #8a38f5;
+      transition: all 0.3s;
+      font-size: 24px;
+      font-weight: 400;
       text-align: center;
     }
+    
+    .a:hover {
+      background: #8a38f5;
+      color: #000;
+      border-radius: 40px;
+      font-weight: 500;
+    }
+    
+    .footer {
+      margin-top: 20px;
+      font-size: 20px;
+      color: #ffffff78;
+      text-align: center;
+      font-weight: 400;
+    }
+    
+    .href {
+      text-decoration: none;
+      color: #8a38f5;
+      font-weight: 600;
+    }
+    
+    .particles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: -1;
+    }
+    
+    .particle {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: #8a38f5;
+      border-radius: 50%;
+      opacity: 0.4;
+      animation: float 10s infinite linear;
+    }
+    
+    @keyframes float {
+      from {
+        transform: translateY(100%) translateX(0);
+      }
+      to {
+        transform: translateY(-100px) translateX(50px);
+      }
+    }
+    
+    .particle:nth-child(1) { left: 10%; animation-delay: 0s; animation-duration: 8s; }
+    .particle:nth-child(2) { left: 25%; animation-delay: 1s; animation-duration: 10s; }
+    .particle:nth-child(3) { left: 40%; animation-delay: 2s; animation-duration: 9s; }
+    .particle:nth-child(4) { left: 55%; animation-delay: 3s; animation-duration: 11s; }
+    .particle:nth-child(5) { left: 70%; animation-delay: 4s; animation-duration: 8.5s; }
+    .particle:nth-child(6) { left: 85%; animation-delay: 5s; animation-duration: 9.5s; }
   </style>
 </head>
 <body>
-  <h1>Algoritmika Security</h1>
+  <div class="particles">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
   
-  <a href="https://github.com/sadf2000/AlgoSecure/" target="_blank">Ссылка на проект в гитхабе</a>
+  <img src="logo.svg" alt="logo" class="logo">
+  <h1>защита для алгоритмики</h1>
+  
+  <a href="https://github.com/sadf2000/AlgoSecure/" target="_blank" class="a">github проекта</a>
+  
   <div class="footer">
-    Версия 1.0 · Автор: Даниил Шустов
+    версия 1.0 · автор: даниил шустов · задизайнено у <a href="https://t.me/vlcguy" class="href">amoeba</a>
   </div>
 </body>
 </html>
