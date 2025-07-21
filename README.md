@@ -50,11 +50,11 @@
   - **Мальцеву Михаилу**
 - Редизайн сделал **Амёба**, он же **Тишкин Филипп** на Алгоритмике
 
-<p align="center">
-   <h3>Лого у Мальцева:</h3
+<h3>Лого у Мальцева:</h3
    
-   <img src="https://github.com/user-attachments/assets/176430da-2d2b-451c-a759-1094f90cc190" width="350" />
+<img src="https://github.com/user-attachments/assets/176430da-2d2b-451c-a759-1094f90cc190" width="350" />
   
+<p align="center">
    <h3>Лого у Роберта:</h3>
    
   <img src="https://github.com/user-attachments/assets/fba4aacb-a87f-4aaa-84b5-bf9f7f1d19fb" width="350" alt="AlgoSecure Screenshot" />
