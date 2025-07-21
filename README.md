@@ -51,5 +51,8 @@
 - Редизайн сделал **Амёба**, он же **Тишкин Филипп** на Алгоритмике
 
 <p align="center">
+   Лого у Мальцева:
+  <img src="https://github.com/user-attachments/assets/176430da-2d2b-451c-a759-1094f90cc190" width="350" alt="AlgoSecure Alpha logo" />
+   Лого у Роберта:
   <img src="https://github.com/user-attachments/assets/fba4aacb-a87f-4aaa-84b5-bf9f7f1d19fb" width="350" alt="AlgoSecure Screenshot" />
 </p>
